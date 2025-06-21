@@ -10,7 +10,9 @@
 
 # frozen_string_literal: true
 
-# frozen_string_literal: true
+# Only run seeds in development and production, not in test environment
+# Test environment should use fixtures instead
+return if Rails.env.test?
 
 # Clear existing data
 puts "🧹 Clearing existing data..."

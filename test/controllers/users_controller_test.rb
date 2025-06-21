@@ -2,7 +2,20 @@ require "test_helper"
 
 class UsersControllerTest < ActionDispatch::IntegrationTest
   setup do
-    @user = users(:one)
+    # Create test data manually since DuckDB fixtures may not work reliably
+    @user = User.create!(
+      name: "John Doe",
+      email: "john@example.com",
+      age: 30,
+      active: true,
+      bio: "A sample user for testing"
+    )
+  end
+
+  teardown do
+    # Clean up test data for isolation
+    Post.destroy_all
+    User.destroy_all
   end
 
   test "should get index" do
