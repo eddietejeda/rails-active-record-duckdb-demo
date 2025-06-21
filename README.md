@@ -250,7 +250,6 @@ Post.create(title: "My First Post", content: "Hello DuckDB!", user: User.first)
 ## Related Resources
 
 - **DuckDB Official Documentation:** [https://duckdb.org/docs/](https://duckdb.org/docs/)
-- **ActiveRecord DuckDB Adapter (Archive):** [https://github.com/eddietejeda/activerecord-duckdb-adapter-archive](https://github.com/eddietejeda/activerecord-duckdb-adapter-archive)
 - **ActiveRecord DuckDB Adapter (Current):** [https://github.com/eddietejeda/activerecord-duckdb-adapter](https://github.com/eddietejeda/activerecord-duckdb-adapter)
 - **Ruby DuckDB Bindings:** [https://github.com/suketa/ruby-duckdb](https://github.com/suketa/ruby-duckdb)
 
